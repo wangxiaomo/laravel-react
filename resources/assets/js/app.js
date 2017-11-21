@@ -1,7 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import Data from './Components/Data'
+
 ReactDOM.render(
-  <h1>Hello React</h1>,
+  <div>
+    <h1>Hello React</h1>
+    <Data />
+  </div>,
   document.getElementById('app')
 )

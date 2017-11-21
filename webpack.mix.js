@@ -12,4 +12,4 @@ let mix = require('laravel-mix')
  */
 
 mix.sass('resources/assets/sass/app.scss', 'public/css').version()
-mix.react('resources/assets/js/app.jsx', 'public/js').version()
+mix.react('resources/assets/js/app.js', 'public/js').version()
