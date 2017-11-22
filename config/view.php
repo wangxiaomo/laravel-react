@@ -14,7 +14,7 @@ return [
     */
 
     'paths' => [
-        resource_path('views'),
+        config('app.env') == 'production'? resource_path('build') : resource_path('views'),
     ],
 
     /*

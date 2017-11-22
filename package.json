@@ -13,10 +13,12 @@
     "axios": "^0.16.2",
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-usemin": "^0.3.28",
+    "laravel-mix": "^1.0",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1",
-    "laravel-mix": "^1.0"
+    "react-dom": "^16.1.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
