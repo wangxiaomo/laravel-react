@@ -1,26 +1,22 @@
 import React from 'react'
 import axios from 'axios'
 
-class Data extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {r: ''}
-  }
 
+class Data extends React.Component {
   componentWillMount() {
-    this.setState({r: 'loading'})
+    this.props.syncData('loading')
   }
 
   componentDidMount() {
     axios.get('/api/data')
       .then((response) => {
-        this.setState({r: response.data.msg})
+        this.props.syncData(response.data.msg)
       })
   }
 
   render() {
     return (
-      <div>{ this.state.r }</div>
+      <div>{this.props.value}</div>
     )
   }
 }
